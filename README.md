@@ -4,16 +4,14 @@ This project includes a simple firmware example for ESP8266 to control a relay u
 The ESP8266 listens for Modbus TCP coil commands to toggle Relay 4 (connected to pin D2 or GPIO4).
 
 📦 Required Libraries
+
 ModbusIP_ESP8266
-
 EEPROM
-
 ESP8266WiFi
 
 🔌 Example Code
-cpp
-Kopyala
-Düzenle
+
+
 #include <ESP8266WiFi.h>
 #include <ModbusIP_ESP8266.h>
 
@@ -45,6 +43,7 @@ void loop() {
   bool coilState = mb.Coil(1);
   digitalWrite(RELAY_PIN, coilState ? HIGH : LOW);
 }
+
 
 📡 How It Works
 The mobile app sends a write coil Modbus TCP command to coil address 1.
