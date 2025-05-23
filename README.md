@@ -1,4 +1,5 @@
 🛠 ESP8266 Firmware (Modbus TCP)
+
 This project includes a simple firmware example for ESP8266 to control a relay using Modbus TCP protocol.
 
 The ESP8266 listens for Modbus TCP coil commands to toggle Relay 4 (connected to pin D2 or GPIO4).
@@ -46,6 +47,7 @@ void loop() {
 
 
 📡 How It Works
+
 The mobile app sends a write coil Modbus TCP command to coil address 1.
 
 ESP8266 reads that coil and toggles RELAY_PIN accordingly.
