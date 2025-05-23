@@ -45,6 +45,7 @@ void loop() {
   bool coilState = mb.Coil(1);
   digitalWrite(RELAY_PIN, coilState ? HIGH : LOW);
 }
+
 📡 How It Works
 The mobile app sends a write coil Modbus TCP command to coil address 1.
 
